@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link nav-actual" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="sobreMi.html">Sobre mí</a>
@@ -46,8 +46,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="tutoriales.html">Tutoriales</a>
                 </li>
+            </ul>
+        </div>
+        <div class="nav-redes collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto flex-row">
+                <li class="nav-item menu-half">
+                    <a class="nav-link" href="https://www.instagram.com/rincon.de.calma/"><img src="media/instagram.png"></a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="https://youtu.be/icisRakTtJ8"><img src="media/youtube.png"></a>
                 </li>
             </ul>
         </div>
@@ -97,8 +104,8 @@
                         <a href="productos.html">
                             <h3>Inspiración</h3>
                         </a>
-                        <a href="productos.html">
-                            <p>Descubrí todas las posibilidades que ofrece el macramé</p>
+                        <a href="https://www.instagram.com/rincon.de.calma/">
+                            <p><i class="fa-brands fa-instagram"></i> Descubrí todas las posibilidades que ofrece el macramé</p>
                         </a>
                     </div>
                 </div>
@@ -116,7 +123,6 @@
         <!-- FIN CARRUSEL -->
 
         <!-- INICIO SOBRE MÍ -->
-        
         <div class="principal">
             <h1>Conocé el Rincón</h1>
             <p>Rincón de Calma es un emprendimiento de insumos de macramé que nació como un hobby y se convirtió en
@@ -129,15 +135,29 @@
         <!-- INICIO PRODUCTOS -->
         <div class="principal">
             <h1>Productos</h1>
-            <section class="productos">
-                <article class="item item1"></article>
-                <article class="item item2"></article>
-                <article class="item item3"></article>
-                <article class="item item4"></article>
-                <article class="item item5"></article>
-            </section>
+            <div class="container-fluid productos">
+                <div class="row">
+                    <aside class="col-sm-12 col-lg-3">
+                        <p>Hilo Retorcido Ocre</p>
+                        <a href="productos/ocre.html"><img src="media/ocre.jpg" alt="hilo ocre" class="img-fluid"></a>
+                    </aside>
+                    <aside class="col-sm-12 col-lg-3">
+                        <p>Hilo Retorcido Verde</p>
+                        <a href="productos/verde.html"><img src="media/verde.jpg" alt="hilo verde" class="img-fluid"></a>
+                    </aside>
+                    <aside class="col-sm-12 col-lg-3">
+                        <p>Hilo Retorcido Durazno</p>
+                        <a href="productos/durazno.html"><img src="media/durazno.jpg" alt="hilo durazno" class="img-fluid"></a>
+                    </aside>
+                    <aside class="col-sm-12 col-lg-3">
+                        <p>Hilo Retorcido Marrón</p>
+                        <a href="productos/marron.html"><img src="media/marron.jpg" alt="hilo marron" class="img-fluid"></a>
+                    </aside>
+                </div>
+            </div>
             <a href="productos.html"><button type="button" class="btn">Ver más</button></a>
         </div>
+        
         <!-- FIN PRODUCTOS -->
 
         <!-- INICIO FOOTER -->
@@ -163,9 +183,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tutoriales.html">Tutoriales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>

@@ -5,19 +5,19 @@ $choco: #d2691e;
 $naranja: #FFD17C;
 $marronClaro: #C29361;
 $negro: #181716b6;
-$blanco:  #fdfdfc;
+$blanco: #fdfdfcf1;
 $marronOscuro: #4B0D00;
 
 //FUENTES DE TEXTO
 $titulos: 'Yanone Kaffeesatz', sans-serif;
 $parrafos: 'Montserrat', sans-serif;
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
 //BARRA DE NAVEGACIÓN
-.navbar{
+.navbar {
     background-color: $choco;
     font-family: $titulos;
     letter-spacing: 2px;
@@ -29,20 +29,39 @@ a:hover{
     padding: 15px;
     width: 100%;
 
-    .navbar-brand{
+    .navbar-brand {
         color: $naranja;
         font-size: 30px;
         text-transform: uppercase;
     }
 
+    .nav-actual{
+        color: $blanco !important;
+    }
+}
+
+.nav-redes{
+    img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    }
+    a.nav-link{
+        margin: 0px;
+        padding: 0px !important;
+    }
+}
+
+.navbar-nav.ml-auto.flex-row img{
+    margin-right: 18px;
 }
 
 //CARRUSEL
-.carousel-inner{
+.carousel-inner {
     height: 420px;
 }
 
-.carousel-item{
+.carousel-item {
 
     margin-top: 20px;
 
@@ -53,7 +72,6 @@ a:hover{
         height: 300px;
         margin: 40px;
         border-radius: 40px;
-        
     }
 
     h3 {
@@ -66,43 +84,65 @@ a:hover{
         margin: 0;
     }
 
-    p{
+    p {
         font-family: $parrafos;
         font-size: 20px;
         color: black;
     }
 
-    .claro{
+    .claro {
         color: $blanco;
     }
 
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
     border-radius: 50%;
     width: 9px;
     height: 9px;
     margin-left: 10px;
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 
-main{
+main {
     height: auto;
     background-image: linear-gradient(rgba(206, 152, 72, 0.4), rgba(206, 152, 72, 0.1)), url(media/fondo\ 12\ mm.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    h2{
+
+    h2 {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         letter-spacing: 5px;
         text-transform: uppercase;
-        color:$blanco;
-        padding: 30px 0px 10px 100px;
+        color: $blanco;
+        padding: 30px 0px 10px 40px;
         font-size: 28px;
     }
 }
 
-.principal{
+.prod{
+    height: 100vh;
+    table{
+        font-family: $parrafos;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        background-color: $choco;
+        font-family: $parrafos;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: $blanco;
+        padding: 20px 30px 20px 30px;
+        margin-left: 10px;
+    }
+}
+
+
+.principal {
     background-color: rgba(255, 255, 255, 0.445);
     padding: 40px;
     text-align: center;
@@ -119,14 +159,20 @@ main{
         padding-left: 20px;
     }
 
-    p{
+    h3{
+        font-family: $parrafos;
+
+    }
+
+    p {
         font-family: $parrafos;
         font-size: 18px;
         text-align: left;
         padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .btn{
+    .btn {
         background-color: $choco;
         font-family: $parrafos;
         font-weight: bold;
@@ -136,58 +182,48 @@ main{
     }
 }
 
-.productos{
-    height: auto;
+.productos {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 400px);
-    grid-gap: 40px;
-    padding: 25px;
+
+    aside a img {
+        border: 3px solid rgb(253, 253, 252) !important;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+
+    aside a :hover{
+        transition-duration: 0.1s;
+        filter: sepia(50%);
+    }
+
+    aside p{
+        text-align: center !important;
+    }
 }
 
-.item{
-    width: 100%;
-    border: 2px solid rgb(253, 253, 252);
-    border-radius: 5px;
-}
+.sobreMi{
+    aside img{
+        margin-left: 20px;
+    }
 
-.item1{
-    background-image: url(media/ocre.jpg);
-    background-size: cover;
-    background-position: center;
+    aside{
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.445);
+        padding: 40px;
+    
+        h3{
+            font-family: $parrafos;
+            text-align: center;
+        }
+    
+        p {
+            margin-left: 20px;
+            font-family: $parrafos;
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
 }
-
-.item2{
-    background-image: url(media/verde.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item3{
-    background-image: url(media/durazno.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item4{
-    background-image: url(media/marron.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item5{
-    background-image: url(media/crudo.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item6{
-    background-image: url(media/12mmMano.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
 
 // h2{
 //     background-color: #C29361;
@@ -199,152 +235,74 @@ main{
 //     padding: 20px;
 //     font-size: 30px;
 // }
-footer{
+footer {
     background-color: $naranja;
     text-align: center;
     font-family: 'Kalam', cursive;
     font-size: 20px;
     color: rgba(24, 23, 22, 0.712);
     padding: 20px;
-    a{
+
+    a {
         color: $choco;
     }
-    div ul li{
+
+    div ul li {
         display: inline-block;
         padding-top: 15px;
-        :hover{
+
+        :hover {
             color: #4B0D00;
         }
     }
 }
 
 
-.redes a{
+.redes a {
     font-size: 30px;
     color: rgba(24, 23, 22, 0.712);
     letter-spacing: 10px;
 }
 
-.redes a:hover{
+.redes a:hover {
     color: rgb(253, 253, 252);
     text-shadow: 0 0 5px gray;
 }
 
-.sobreMi{
-    width: 100%;
-    height: auto;
-}
-
-.nleft{
-    background-image: url(media/sobreMi.PNG);
-    width: 100%;
-    background-position: top;
-    background-size: cover;
-    margin: 0px 30px 0px 100px;
-    border-radius: 10px;
-}
-
-.nright{    
-    background-color: rgba(255, 255, 255, 0.445);
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 50px;
-
-    h3{
-        padding: 6px;
-        text-align: center;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        letter-spacing: 2px;
-    }
-
-    p{
-        padding: 10px;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
-        letter-spacing: 1px;
-    }
-}
 
 
-@media only screen and (min-width:480px){
-    .nleft{
-        height: 450px;;
-    }
-    
-    .productos{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 300px);
-        grid-gap: 20px;
-        padding: 20px;
-    }
-}
+// .sobreMi {
+//     width: 100%;
+//     height: auto;
+// }
 
-@media only screen and (min-width:768px){
-    .nleft{
-        width: 50%;
-    }
+// .nleft {
+//     background-image: url(media/sobreMi.PNG);
+//     width: 100%;
+//     background-position: top;
+//     background-size: cover;
+//     margin: 0px 30px 0px 100px;
+//     border-radius: 10px;
+// }
 
-    .nright{
-        width: 50%;
+// .nright {
+//     background-color: rgba(255, 255, 255, 0.445);
+//     width: 100%;
+//     border-radius: 10px;
+//     margin-bottom: 50px;
 
-    }
-    
-    .productos{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
-    }
-}
+//     h3 {
+//         padding: 6px;
+//         text-align: center;
+//         font-family: 'Yanone Kaffeesatz', sans-serif;
+//         letter-spacing: 2px;
+//     }
 
-@media only screen and (min-width:768px){
-
-    .nleft{
-        width: 40%;
-    }
-
-    .nright{
-        width: 60%;
-
-    }
-
-    .productos{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
-    }
-}
-
-@media only screen and (min-width:1020px){
-
-    footer{
-        font-size: 20px;
-    }
-    
-    .redes a{
-        font-size: 30px;
-        letter-spacing: 20px;
-    }
-
-    .sobreMi{
-        display: flex;
-    }
-
-    .nleft{
-        width: 40%;
-    }
-
-    .nright{
-        width: 40%;
-        font-size: 100px;
-    }
-
-    .nright p{
-        font-size: 20px;
-    }
-
-    .productos{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(1, 300px);
-        height: auto;
-    }
-}
+//     p {
+//         padding: 10px;
+//         text-align: center;
+//         font-family: 'Montserrat', sans-serif;
+//         font-size: 15px;
+//         letter-spacing: 1px;
+//     }
+// }
