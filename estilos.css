@@ -37,6 +37,10 @@ a:hover {
   margin-right: 18px;
 }
 
+.movil {
+  display: none;
+}
+
 .carousel-inner {
   height: 420px;
 }
@@ -153,7 +157,7 @@ main h2 {
 .productos aside a img {
   border: 3px solid rgb(253, 253, 252) !important;
   border-radius: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 50px;
 }
 .productos aside a :hover {
   transition-duration: 0.1s;
@@ -161,6 +165,7 @@ main h2 {
 }
 .productos aside p {
   text-align: center !important;
+  padding: 0px;
 }
 
 .sobreMi aside img {
@@ -210,4 +215,41 @@ footer div ul li :hover {
 .redes a:hover {
   color: rgb(253, 253, 252);
   text-shadow: 0 0 5px gray;
+}
+
+@media only screen and (max-width: 470px) {
+  .desktop {
+    display: none;
+  }
+  .movil {
+    display: flex;
+  }
+  .carousel-inner {
+    height: 325px;
+  }
+  .carousel-item img {
+    width: 230px;
+    height: 200px;
+  }
+  .carousel-item h3 {
+    font-size: 20px;
+    margin-bottom: 85px;
+  }
+  .principal p {
+    font-size: 16px;
+  }
+  .sobreMi aside img {
+    margin: 0px;
+  }
+  .sobreMi aside p {
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  footer div ul {
+    -webkit-padding-end: 40px;
+            padding-inline-end: 40px;
+  }
+  footer div ul li {
+    display: block;
+  }
 }/*# sourceMappingURL=estilos.css.map */

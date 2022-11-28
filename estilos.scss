@@ -57,6 +57,10 @@ a:hover {
 }
 
 //CARRUSEL
+.movil{
+    display: none;
+}
+
 .carousel-inner {
     height: 420px;
 }
@@ -180,6 +184,7 @@ main {
         color: $blanco;
         font-weight: lighter;
     }
+    
 }
 
 .productos {
@@ -188,7 +193,7 @@ main {
     aside a img {
         border: 3px solid rgb(253, 253, 252) !important;
         border-radius: 4px;
-        margin-bottom: 16px;
+        margin-bottom: 50px;
     }
 
     aside a :hover{
@@ -198,8 +203,10 @@ main {
 
     aside p{
         text-align: center !important;
+        padding: 0px;
     }
 }
+
 
 .sobreMi{
     aside img{
@@ -269,6 +276,62 @@ footer {
     text-shadow: 0 0 5px gray;
 }
 
+
+@media only screen and (max-width:470px){
+    .desktop{
+        display: none;
+    }
+    .movil{
+        display: flex;
+    }
+    .carousel-inner {
+        height: 325px;
+    }
+
+    .carousel-item {
+
+        img {
+            width: 230px;
+            height: 200px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 85px;
+        }
+    }
+
+    .principal {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .sobreMi{
+
+    
+        aside{
+            img{
+                margin: 0px;
+            }
+            p {
+                margin-left: 0px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    footer{
+        
+        div ul{
+            padding-inline-end: 40px;
+
+            li {
+            display: block;
+            }
+        }
+    }
+}
 
 
 // .sobreMi {
