@@ -245,6 +245,13 @@ footer div ul li :hover {
     margin-left: 0px;
     font-size: 16px;
   }
+  .prod {
+    height: auto;
+  }
+  .prod table {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
   footer div ul {
     -webkit-padding-end: 40px;
             padding-inline-end: 40px;
